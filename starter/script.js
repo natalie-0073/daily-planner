@@ -2,7 +2,24 @@ $(document).ready(function() {
     const now = dayjs();
     const todayDate = now.format('dddd, MMMM D, YYYY h:mm A');
     $('#currentDay').text( `${todayDate}`);
+    const currentHour = dayjs().format('H');
+
+    $('.hour').each(function() {
+        const divHour = parseInt($(this).text().replace(/[^\d]/g, ''));
+        if (divHour < currentHour) {
+            // Past hour logic
+            $(this).siblings('.description').addClass('past');
+        } else if (divHour === currentHour) {
+            // Current hour logic
+            $(this).siblings('.description').addClass('present');
+        } else {
+            // Future hour logic
+            $(this).siblings('.description').addClass('future');
+        }
+    });
   });
+ 
+
   $(document).ready(function() {
     // Save text to local storage when the save button is clicked
     $('.saveBtn').click(function() {
