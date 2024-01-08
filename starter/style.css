@@ -88,3 +88,6 @@ header {
 .last{
   margin-bottom: 2%;
 }
+label{
+  font-weight: 300;
+}
