@@ -7,13 +7,10 @@ $(document).ready(function() {
     $('.hour').each(function() {
         const divHour = parseInt($(this).text().replace(/[^\d]/g, ''));
         if (divHour < currentHour) {
-            // Past hour logic
             $(this).siblings('.description').addClass('past');
         } else if (divHour === currentHour) {
-            // Current hour logic
             $(this).siblings('.description').addClass('present');
         } else {
-            // Future hour logic
             $(this).siblings('.description').addClass('future');
         }
     });

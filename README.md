@@ -11,5 +11,7 @@ Users can save tasks or notes for each hour.
 The app uses local storage to persist data, allowing users to access their schedule even after refreshing the page.
 ### Color Coding 
 Time blocks are color-coded to indicate whether the time is in the past, present, or future based on the current time.
+## Website
+https://natalie-0073.github.io/daily-planner/
 ## Screenshot
-(images/image.png)
+(./image.png)
