@@ -14,4 +14,4 @@ Time blocks are color-coded to indicate whether the time is in the past, present
 ## Website
 https://natalie-0073.github.io/daily-planner/
 ## Screenshot
-(./image.png)
+![Screenshot of the website](images/image.png)
