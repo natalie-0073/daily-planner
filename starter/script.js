@@ -26,7 +26,7 @@ $(document).ready(function() {
         const textToSave = $(this).siblings('.description').find('.task').val();
         const taskId = $(this).siblings('.description').find('.task').data('task-id');
         localStorage.setItem('savedTask_' + taskId, textToSave);
-        alert('Task saved to local storage!');
+        alert('Your task is successfully saved!');
     });
 
     // Load any existing text from local storage on page load
